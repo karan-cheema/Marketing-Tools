@@ -1,0 +1,8 @@
+print("Welcome to UTM Code Generator\n This tool will generate UTMs for you without internet connection\nTo use this tool just fill the fields. In case you want to skip a particular field, just press the 'Enter' key!")
+link = input("Paste the complete URL here: ")
+campaign_id = input("Enter campaign ID: ")
+campaign_source = input("Enter the source of the campaign: ")
+campaign_medium = input("Enter the medium of the campaign: ")
+campaign_name = input("Enter the name of the campaign: ")
+campaign_term = input("Enter the campaign term: ")
+campaign_content = input("Enter campaign content: ")
