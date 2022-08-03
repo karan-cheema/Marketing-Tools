@@ -14,7 +14,7 @@ additional_discount = input("Are you getting any additional discount/cashback? Y
 
 bill_after_discount = 0
 
-if additional_discount == "Y":
+if additional_discount == "Y" or "y" or "yes" or "Yes" or "YES":
     add_discount = int(input("How much additional discount are you getting? "))
     bill_after_discount = discount * total_bill / 100
     print(f"Your total savings after additional discount is {bill_after_discount}")
