@@ -5,7 +5,7 @@ print('''
  | |  | | / __|/ __/ _ \| | | | '_ \| __| | |    / _` | |/ __| | | | |/ _` | __/ _ \| '__|
  | |__| | \__ \ (_| (_) | |_| | | | | |_  | |___| (_| | | (__| |_| | | (_| | || (_) | |
  |_____/|_|___/\___\___/ \__,_|_| |_|\__|  \_____\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|
-                                                                                                                                                                                
+
 ''')
 
 total_bill = int(input("What is your total bill? "))
@@ -14,7 +14,7 @@ additional_discount = input("Are you getting any additional discount/cashback? Y
 
 bill_after_discount = 0
 
-if additional_discount == "Y":
+if additional_discount == "Y" or "y" or "yes" or "Yes" or "YES":
     add_discount = int(input("How much additional discount are you getting? "))
     bill_after_discount = discount * total_bill / 100
     print(f"Your total savings after additional discount is {bill_after_discount}")
