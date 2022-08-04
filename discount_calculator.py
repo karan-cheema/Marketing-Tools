@@ -23,6 +23,11 @@ if additional_discount == "Y":
     total_discount_after_additional_discount = add_discount * bill_before_additional_discount / 100
     total_bill_after_all_discount = bill_before_additional_discount - total_discount_after_additional_discount
     print(f"Your absolute total is {total_bill_after_all_discount}")
+    split_bill = str(input("Would you like to split bill? Y or N"))
+    if split_bill == "Y":
+        total_people = int(input("Between how many people would you like to split your bill with? "))
+        total_bill_after_split = total_bill_after_all_discount / total_people
+        print(f"Each person will have to pay {total_bill_after_split}")
 
 
 else:
@@ -30,5 +35,8 @@ else:
     print(f"You are saving {bill_after_discount}")
     total_bill_after_discount = total_bill - bill_after_discount
     print(f"Your total bill is {total_bill_after_discount}")
-
-##Split bill?
+        split_bill = str(input("Would you like to split bill? Y or N"))
+        if split_bill == "Y":
+            total_people = int(input("Between how many people would you like to split your bill with? "))
+            total_bill_after_split = total_bill_after_all_discount / total_people
+            print(f"Each person will have to pay {total_bill_after_split}")
