@@ -30,3 +30,5 @@ else:
     print(f"You are saving {bill_after_discount}")
     total_bill_after_discount = total_bill - bill_after_discount
     print(f"Your total bill is {total_bill_after_discount}")
+
+##Split bill?
